@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AquaFlow Plumbing Services | 24/7 Emergency Plumber</title>
+<meta name="description" content="Licensed, affordable plumbers available 24/7. Drain cleaning, water heaters, leak detection and more. Get a free estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071B35;--ocean:#087EAD;--aqua:#00C9D8;--cta:#FF8A36;--bg:#F5F9FC;--text:#172B40;--r:22px;--sh:0 10px 30px rgba(7,27,53,.09);--shl:0 22px 45px rgba(7,27,53,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+h1,h2,h3{font-family:Poppins,system-ui,sans-serif;line-height:1.2;margin:0 0 .5em;color:var(--navy)}
+h1{font-size:clamp(2.2rem,5vw,3.8rem)}h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}h3{font-size:1.2rem}
+a{color:inherit}
+.wrap{max-width:1240px;margin:auto;padding:0 24px}
+section{padding:100px 0}
+.sub{max-width:620px;margin:0 auto 48px;text-align:center}
+.center{text-align:center}
+.btn{display:inline-block;padding:15px 32px;border-radius:50px;font-weight:500;text-decoration:none;border:0;cursor:pointer;font:500 1rem Inter,sans-serif;transition:transform .3s,box-shadow .3s,filter .3s}
+.btn-cta{background:linear-gradient(135deg,#FF8A36,#FF5E1A);color:#fff;box-shadow:0 8px 20px rgba(255,138,54,.35)}
+.btn-cta:hover{transform:translateY(-3px);filter:brightness(1.08);box-shadow:0 14px 28px rgba(255,138,54,.45)}
+.btn-ghost{border:2px solid rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}
+/* header */
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background .3s,box-shadow .3s}
+header.sc{background:rgba(7,27,53,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:10px;font:700 1.35rem Poppins,sans-serif;color:#fff;text-decoration:none}
+.logo svg{width:34px;height:34px}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
+nav a.l{color:#fff;text-decoration:none;position:relative;padding:6px 0;font-weight:500}
+nav a.l::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:linear-gradient(90deg,var(--aqua),var(--ocean));transform:scaleX(0);transform-origin:right;transition:transform .35s}
+nav a.l:hover::after{transform:scaleX(1);transform-origin:left}
+.dd{position:relative}
+.dd .menu{position:absolute;top:100%;left:-16px;min-width:230px;background:#fff;border-radius:16px;box-shadow:var(--shl);padding:10px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.25s;display:block}
+.dd:hover .menu,.dd:focus-within .menu{opacity:1;visibility:visible;transform:none}
+.menu a{display:block;padding:8px 14px;border-radius:10px;text-decoration:none;color:var(--text);font-size:.95rem}
+.menu a:hover{background:var(--bg);color:var(--ocean)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:140px 0 80px;background:radial-gradient(circle at 80% 20%,rgba(0,201,216,.35),transparent 45%),linear-gradient(135deg,#071B35 10%,#087EAD 120%);color:#fff;overflow:hidden}
+.hero h1{color:#fff}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero p{font-size:1.15rem;max-width:520px;opacity:.92}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.trust{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap;font-size:.95rem;opacity:.9}
+.art{position:relative;aspect-ratio:4/5;max-width:470px;margin-left:auto;width:100%}
+.photo{position:absolute;inset:0;border-radius:32px;background:linear-gradient(160deg,#0f3a63,#087EAD 60%,#00C9D8);overflow:hidden;box-shadow:var(--shl)}
+.photo svg{width:100%;height:100%}
+.glass{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:20px;box-shadow:var(--shl);padding:16px 20px;position:absolute;color:#fff;animation:fl 5s ease-in-out infinite}
+.glass b{display:block;font:700 1.5rem Poppins,sans-serif}
+.g1{left:-34px;bottom:12%}.g2{right:-14px;top:9%;animation-delay:1.5s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:transform .4s,box-shadow .4s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-10px);box-shadow:var(--shl)}
+.thumb{height:150px;overflow:hidden}
+.thumb div{height:100%;transition:transform .6s;background-size:cover}
+.card:hover .thumb div{transform:scale(1.12)}
+.cb{padding:0 22px 24px;flex:1;display:flex;flex-direction:column}
+.ic{width:56px;height:56px;border-radius:50%;margin:-28px 0 14px;display:grid;place-items:center;background:#fff;color:var(--ocean);box-shadow:var(--sh);font-size:1.4rem;transition:.35s;position:relative}
+.card:hover .ic{background:linear-gradient(135deg,var(--ocean),var(--aqua));color:#fff;transform:rotate(-8deg)}
+.cb p{margin:0 0 16px;font-size:.95rem;flex:1}
+.more{color:var(--ocean);font-weight:500;text-decoration:none;transition:color .3s}
+.card:hover .more{color:var(--cta)}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about .photo{position:relative;aspect-ratio:5/4}
+.badge{position:absolute;right:-18px;bottom:-18px;background:linear-gradient(135deg,var(--cta),#FF5E1A);color:#fff;border-radius:20px;padding:18px 24px;font:700 2rem Poppins,sans-serif;line-height:1.1;box-shadow:var(--shl)}
+.badge small{display:block;font:500 .8rem Inter,sans-serif}
+.ticks{list-style:none;padding:0;margin:20px 0 30px}
+.ticks li{padding:6px 0 6px 34px;position:relative}
+.ticks li::before{content:"✓";position:absolute;left:0;top:7px;width:24px;height:24px;border-radius:50%;background:rgba(8,126,173,.12);color:var(--ocean);display:grid;place-items:center;font-size:.8rem;font-weight:700}
+.why{background:#fff}
+.six{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.feat{background:rgba(245,249,252,.8);border:1px solid rgba(8,126,173,.14);border-radius:var(--r);padding:30px;box-shadow:var(--sh);transition:transform .35s,box-shadow .35s}
+.feat:hover{transform:translateY(-8px);box-shadow:var(--shl)}
+.feat .ic{margin:0 0 16px;background:linear-gradient(135deg,var(--ocean),var(--aqua));color:#fff}
+.feat p{margin:0}
+/* stats */
+.stats{background:var(--navy);color:#fff;padding:70px 0}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.sg div{padding:10px;border-left:1px solid rgba(255,255,255,.12)}
+.sg div:first-child{border:0}
+.sg b{font:700 3.2rem Poppins,sans-serif;color:var(--aqua);display:block;line-height:1.2}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gi{position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;color:#fff}
+.gi .bg{position:absolute;inset:0;transition:transform .6s}
+.gi:hover .bg{transform:scale(1.1)}
+.gi span{position:absolute;inset:0;display:flex;align-items:flex-end;padding:20px;font:600 1.05rem Poppins,sans-serif;background:linear-gradient(transparent 40%,rgba(7,27,53,.85));opacity:0;transition:opacity .35s}
+.gi:hover span,.gi:focus-within span{opacity:1}
+/* testimonials */
+.tw{overflow:hidden}
+.tt{display:flex;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.tc{flex:0 0 33.333%;padding:10px 12px}
+.tc div{background:#fff;border-radius:var(--r);padding:30px;box-shadow:var(--sh);height:100%}
+.stars{color:#FFB400;letter-spacing:3px}
+.who{display:flex;align-items:center;gap:12px;margin-top:18px}
+.av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--ocean),var(--aqua));color:#fff;display:grid;place-items:center;font:600 1rem Poppins,sans-serif}
+.nv{display:flex;justify-content:center;gap:14px;margin-top:28px}
+.nv button{width:48px;height:48px;border-radius:50%;border:0;background:#fff;box-shadow:var(--sh);font-size:1.2rem;cursor:pointer;color:var(--navy);transition:.3s}
+.nv button:hover{background:var(--ocean);color:#fff}
+/* emergency */
+.em{background:linear-gradient(135deg,rgba(7,27,53,.95),rgba(8,126,173,.88)),repeating-linear-gradient(45deg,#071B35 0 18px,#0a2a4d 18px 36px);color:#fff;text-align:center}
+.em h2{color:#fff}
+.em p{max-width:560px;margin:0 auto 28px}
+.pulse{animation:pu 2s infinite;font-size:1.15rem;padding:18px 40px}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(255,138,54,.6)}70%{box-shadow:0 0 0 18px rgba(255,138,54,0)}100%{box-shadow:0 0 0 0 rgba(255,138,54,0)}}
+/* contact */
+.ct{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+.info{list-style:none;padding:0;margin:26px 0 0}
+.info li{display:flex;gap:14px;padding:12px 0}
+.info i{font-style:normal;width:44px;height:44px;flex:none;border-radius:50%;background:rgba(8,126,173,.12);display:grid;place-items:center}
+form{background:#fff;border-radius:26px;padding:34px;box-shadow:var(--shl);display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+label{font-size:.9rem;font-weight:500;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;padding:14px 16px;border:1px solid #d7e3ee;border-radius:12px;font:inherit;color:var(--text);background:#fff;transition:border-color .3s,box-shadow .3s}
+input:focus,select:focus,textarea:focus{border-color:var(--ocean);box-shadow:0 0 0 4px rgba(8,126,173,.15);outline:none}
+input:user-invalid,textarea:user-invalid{border-color:#d33}
+.ok{display:none;color:#0a7a45;font-weight:500}
+/* faq */
+.faq{max-width:800px;margin:auto}
+details{background:#fff;border-radius:16px;box-shadow:var(--sh);margin-bottom:14px;padding:4px 24px}
+summary{cursor:pointer;font:600 1.05rem Poppins,sans-serif;padding:18px 0;list-style:none;display:flex;justify-content:space-between;color:var(--navy)}
+summary::after{content:"+";color:var(--ocean);font-size:1.5rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin:0 0 18px}
+/* footer */
+footer{background:var(--navy);color:rgba(255,255,255,.78);padding:80px 0 30px}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+footer h3{color:#fff;font-size:1.05rem}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{padding:4px 0}
+footer a{text-decoration:none}footer a:hover{color:var(--aqua)}
+.soc{display:flex;gap:10px;margin-top:16px}
+.soc a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;font-weight:600;transition:.3s}
+.soc a:hover{background:var(--ocean);color:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:50px;padding-top:24px;font-size:.9rem;text-align:center}
+.cb2{display:none}
+@media(max-width:1024px){
+section{padding:70px 0}
+.cards{grid-template-columns:repeat(2,1fr)}.six{grid-template-columns:repeat(2,1fr)}.gal{grid-template-columns:repeat(2,1fr)}
+.hero .grid,.about,.ct{grid-template-columns:1fr}.art{margin:30px auto 0}
+.tc{flex-basis:50%}.fg{grid-template-columns:1fr 1fr}.sg{grid-template-columns:1fr 1fr;gap:20px}.sg div:nth-child(3){border:0}
+.burger{display:block}
+nav ul{position:absolute;top:78px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:rgba(7,27,53,.97);padding:10px 24px 24px;display:none}
+nav ul.open{display:flex}nav li{width:100%;padding:10px 0}
+.dd .menu{position:static;opacity:1;visibility:visible;transform:none;background:transparent;box-shadow:none;padding:0 0 0 12px;display:none}
+.dd.show .menu{display:block}.menu a{color:rgba(255,255,255,.8)}
+}
+@media(max-width:640px){
+section{padding:56px 0}
+.cards,.six,.gal,.fg{grid-template-columns:1fr}.tc{flex-basis:100%}
+form{grid-template-columns:1fr;padding:24px}.btn{text-align:center}
+.g1,.g2{position:static;animation:none;margin-top:12px}
+.sg b{font-size:2.4rem}
+.cb2{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;background:linear-gradient(135deg,#FF8A36,#FF5E1A);text-align:center;padding:14px calc(14px + env(safe-area-inset-bottom,0px));font-weight:600}
+.cb2 a{color:#fff;text-decoration:none}
+body{padding-bottom:52px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a class="logo" href="#top" aria-label="AquaFlow Plumbing home"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3C20 3 7 17 7 25a13 13 0 0026 0C33 17 20 3 20 3z" fill="#00C9D8"/><path d="M13 26c3-3 5 3 8 0s5 3 7 0" stroke="#071B35" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>AquaFlow</a>
+<nav aria-label="Main"><button class="burger" id="bg" aria-label="Open menu" aria-expanded="false">☰</button>
+<ul id="nl">
+<li><a class="l" href="#top">Home</a></li><li><a class="l" href="#about">About</a></li>
+<li class="dd"><a class="l" href="#services" id="sv">Services ▾</a><div class="menu">
+<a href="#services">Emergency Plumbing</a><a href="#services">Drain Cleaning</a><a href="#services">Water Heater Repair</a><a href="#services">Pipe Installation</a><a href="#services">Leak Detection</a><a href="#services">Bathroom Plumbing</a><a href="#services">Kitchen Plumbing</a><a href="#services">Sewer Line Repair</a></div></li>
+<li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#reviews">Reviews</a></li><li><a class="l" href="#contact">Contact</a></li>
+<li><a class="btn btn-cta" href="tel:+18005550123" style="padding:11px 22px">📞 Emergency Call Now</a></li>
+</ul></nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap grid">
+<div><h1>Reliable Plumbing Solutions for Every Home</h1>
+<p>Professional, Affordable &amp; Trusted Plumbing Services Available 24/7.</p>
+<div class="btns"><a class="btn btn-cta" href="#contact">Get Free Estimate</a><a class="btn btn-ghost" href="tel:+18005550123">Call Now</a></div>
+<div class="trust"><span>★ 4.9 rating</span><span>Licensed &amp; insured</span><span>Free estimates</span></div></div>
+<div class="art"><div class="photo"><svg viewBox="0 0 400 500" aria-label="Illustration of a plumber at work" role="img"><circle cx="200" cy="150" r="52" fill="#FFD7B5"/><path d="M148 140a52 52 0 01104 0z" fill="#FF8A36"/><rect x="140" y="132" width="120" height="14" rx="7" fill="#FF8A36"/><rect x="130" y="205" width="140" height="190" rx="46" fill="#071B35"/><rect x="170" y="205" width="60" height="190" fill="#087EAD"/><rect x="60" y="400" width="280" height="26" rx="13" fill="#C9D6E2"/><rect x="250" y="260" width="110" height="18" rx="9" fill="#C9D6E2" transform="rotate(-24 250 260)"/><circle cx="352" cy="226" r="20" fill="none" stroke="#C9D6E2" stroke-width="10"/><path d="M0 440c60-20 110 20 170 0s110-20 230 0v60H0z" fill="rgba(0,201,216,.45)"/></svg></div>
+<div class="glass g1"><b>24/7</b>Emergency crews</div><div class="glass g2"><b>1,800+</b>Jobs completed</div></div>
+</div></section>
+
+<section id="services"><div class="wrap"><div class="sub center"><h2>Plumbing Services We Offer</h2><p>From a dripping tap to a full sewer line repair, our licensed team handles it right the first time.</p></div>
+<div class="cards" id="cards"></div></div></section>
+
+<section id="about" class="why"><div class="wrap about">
+<div class="photo"><svg viewBox="0 0 400 320" role="img" aria-label="Plumber repairing a pipe"><rect width="400" height="320" fill="none"/><rect x="0" y="210" width="400" height="14" fill="#C9D6E2"/><rect x="90" y="150" width="14" height="150" fill="#C9D6E2"/><circle cx="270" cy="110" r="38" fill="#FFD7B5"/><path d="M232 104a38 38 0 0176 0z" fill="#FF8A36"/><rect x="230" y="148" width="80" height="110" rx="34" fill="#071B35"/><path d="M0 270c50-14 90 14 140 0s90-14 130 0 90 8 130 0v50H0z" fill="rgba(0,201,216,.5)"/></svg><div class="badge">10+<small>years experience</small></div></div>
+<div><h2>About Our Company</h2><p>AquaFlow is a family-run team of licensed plumbers serving homeowners across the USA. We show up on time, quote clearly and stand behind every repair.</p>
+<ul class="ticks"><li>Experienced &amp; licensed plumbers</li><li>10+ years of hands-on experience</li><li>Affordable, upfront pricing</li><li>24/7 emergency service</li></ul>
+<a class="btn btn-cta" href="#contact">Learn More</a></div></div></section>
+
+<section><div class="wrap"><div class="sub center"><h2>Why Choose Us</h2><p>Six reasons homeowners keep calling us back.</p></div>
+<div class="six">
+<div class="feat"><div class="ic">🛡️</div><h3>Licensed Professionals</h3><p>Fully licensed and insured plumbers you can let into your home with confidence.</p></div>
+<div class="feat"><div class="ic">⚡</div><h3>Fast Response</h3><p>Most emergency calls get a technician on the way within the hour.</p></div>
+<div class="feat"><div class="ic">💲</div><h3>Affordable Pricing</h3><p>You see the price before we start. No hidden fees, no surprises.</p></div>
+<div class="feat"><div class="ic">✔️</div><h3>Quality Guarantee</h3><p>Every repair is backed by our workmanship guarantee.</p></div>
+<div class="feat"><div class="ic">🕒</div><h3>24/7 Availability</h3><p>Nights, weekends and holidays. A burst pipe won't wait, so we don't either.</p></div>
+<div class="feat"><div class="ic">😊</div><h3>Customer Satisfaction</h3><p>Hundreds of five-star reviews from neighbors just like you.</p></div>
+</div></div></section>
+
+<section class="stats" aria-label="Statistics"><div class="wrap sg">
+<div><b data-n="2500" data-s="+">2500+</b>Happy Customers</div><div><b data-n="1800" data-s="+">1800+</b>Projects Completed</div>
+<div><b data-n="10" data-s="+">10+</b>Years Experience</div><div><b data-n="24" data-s="/7">24/7</b>Emergency Support</div></div></section>
+
+<section id="projects"><div class="wrap"><div class="sub center"><h2>Recent Projects</h2><p>A look at the work our crews finished this season.</p></div>
+<div class="gal" id="gal"></div></div></section>
+
+<section id="reviews" style="background:#fff"><div class="wrap"><div class="sub center"><h2>What Our Customers Say</h2></div>
+<div class="tw"><div class="tt" id="tt">
+<div class="tc"><div><div class="stars" aria-label="5 stars">★★★★★</div><p>They arrived in 40 minutes on a Sunday and fixed our burst pipe. Price matched the quote exactly.</p><div class="who"><span class="av">JM</span><div><b>Jessica M.</b><br><small>Austin, TX</small></div></div></div></div>
+<div class="tc"><div><div class="stars" aria-label="5 stars">★★★★★</div><p>New water heater installed in one afternoon. The crew was polite and left the garage cleaner than they found it.</p><div class="who"><span class="av">DR</span><div><b>David R.</b><br><small>Denver, CO</small></div></div></div></div>
+<div class="tc"><div><div class="stars" aria-label="5 stars">★★★★★</div><p>Found a hidden leak two other plumbers missed. Honest, quick and fairly priced.</p><div class="who"><span class="av">AP</span><div><b>Amanda P.</b><br><small>Tampa, FL</small></div></div></div></div>
+<div class="tc"><div><div class="stars" aria-label="5 stars">★★★★★</div><p>Our kitchen remodel plumbing was done right and on schedule. I recommend them to everyone.</p><div class="who"><span class="av">TK</span><div><b>Tom K.</b><br><small>Columbus, OH</small></div></div></div></div>
+</div></div>
+<div class="nv"><button id="pv" aria-label="Previous review">←</button><button id="nx" aria-label="Next review">→</button></div></div></section>
+
+<section class="em"><div class="wrap"><h2>Need Emergency Plumbing Help?</h2><p>Our Professional Team Is Ready to Help You Anytime.</p><a class="btn btn-cta pulse" href="tel:+18005550123">Call Our Experts Now</a></div></section>
+
+<section id="contact"><div class="wrap ct">
+<div><h2>Get Your Free Quote</h2><p>Tell us what's going on and we'll reply within 30 minutes during business hours.</p>
+<ul class="info"><li><i>📍</i><span>1200 Main Street, Suite 4<br>Austin, TX 78701</span></li><li><i>📞</i><a href="tel:+18005550123">(800) 555-0123</a></li><li><i>✉️</i><a href="mailto:hello@aquaflowplumbing.com">hello@aquaflowplumbing.com</a></li><li><i>🕒</i><span>Open 24/7 for emergencies<br>Office: Mon–Fri, 8am–6pm</span></li></ul></div>
+<form id="f" novalidate>
+<div><label for="n">Full Name</label><input id="n" required autocomplete="name"></div>
+<div><label for="e">Email Address</label><input id="e" type="email" required autocomplete="email"></div>
+<div><label for="p">Phone Number</label><input id="p" type="tel" required autocomplete="tel"></div>
+<div><label for="s">Select Plumbing Service</label><select id="s" required><option value="">Choose a service</option></select></div>
+<div class="full"><label for="m">Message</label><textarea id="m" rows="4"></textarea></div>
+<div class="full"><button class="btn btn-cta" type="submit">Request a Free Quote</button> <span class="ok" id="ok" role="status">Thanks! We'll call you shortly.</span></div>
+</form></div></section>
+
+<section style="background:#fff"><div class="wrap"><div class="sub center"><h2>Frequently Asked Questions</h2></div><div class="faq">
+<details open><summary>Do You Offer 24/7 Emergency Services?</summary><p>Yes. Our crews are on call every day of the year, including nights and holidays.</p></details>
+<details><summary>How Much Does Plumbing Service Cost?</summary><p>It depends on the job. We give you a clear written quote before any work begins.</p></details>
+<details><summary>Are Your Plumbers Licensed?</summary><p>Every plumber on our team is state-licensed, insured and background-checked.</p></details>
+<details><summary>Do You Offer Free Estimates?</summary><p>Yes, free estimates on all non-emergency work. Request one using the form above.</p></details>
+<details><summary>What Areas Do You Serve?</summary><p>We serve the greater Austin area and surrounding cities. Call to confirm your address.</p></details>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><div class="fg">
+<div><a class="logo" href="#top">AquaFlow</a><p>Licensed, affordable plumbing for homes across the USA, available 24/7.</p><div class="soc"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="X">X</a><a href="#" aria-label="YouTube">▶</a></div></div>
+<div><h3>Quick Links</h3><ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h3>Services</h3><ul id="fs"></ul></div>
+<div><h3>Contact</h3><ul><li>1200 Main Street, Austin, TX</li><li><a href="tel:+18005550123">(800) 555-0123</a></li><li>hello@aquaflowplumbing.com</li></ul></div>
+</div><div class="copy">© 2026 AquaFlow Plumbing Services. All rights reserved.</div></div></footer>
+<div class="cb2"><a href="tel:+18005550123">📞 Call Now: 24/7 Emergency</a></div>
+
+<script>
+var S=[["📞","Emergency Plumbing","Burst pipes and sudden leaks fixed fast, any hour.","#087EAD,#071B35"],["🚿","Drain Cleaning","Clear slow drains and stubborn clogs for good.","#00C9D8,#087EAD"],["🔥","Water Heater Repair","Repair or replace tank and tankless heaters.","#FF8A36,#c4521a"],["🔧","Pipe Installation","New piping and repiping done to code.","#087EAD,#00C9D8"],["💧","Leak Detection","Find hidden leaks before they damage your home.","#071B35,#087EAD"],["🛁","Bathroom Plumbing","Showers, tubs, toilets and vanities installed and fixed.","#00C9D8,#071B35"],["🚰","Kitchen Plumbing","Sinks, faucets, disposals and dishwasher lines.","#087EAD,#FF8A36"],["🌊","Sewer Line Repair","Camera inspection and trenchless sewer repair.","#071B35,#00C9D8"]];
+var c=document.getElementById("cards"),sel=document.getElementById("s"),fs=document.getElementById("fs");
+S.forEach(function(x){
+c.insertAdjacentHTML("beforeend",'<article class="card"><div class="thumb"><div style="background:linear-gradient(135deg,'+x[3]+')"></div></div><div class="cb"><div class="ic" aria-hidden="true">'+x[0]+'</div><h3>'+x[1]+'</h3><p>'+x[2]+'</p><a class="more" href="#contact" aria-label="Learn more about '+x[1]+'">Learn More</a></div></article>');
+sel.insertAdjacentHTML("beforeend","<option>"+x[1]+"</option>");
+fs.insertAdjacentHTML("beforeend",'<li><a href="#services">'+x[1]+"</a></li>");});
+var G=[["Bathroom Installation","#087EAD,#00C9D8"],["Kitchen Plumbing","#071B35,#087EAD"],["Water Heater Installation","#FF8A36,#071B35"],["Pipe Repair","#00C9D8,#071B35"],["Drain Cleaning","#087EAD,#071B35"],["Plumbing Team","#071B35,#FF8A36"]];
+G.forEach(function(x){document.getElementById("gal").insertAdjacentHTML("beforeend",'<div class="gi" tabindex="0"><div class="bg" style="background:linear-gradient(135deg,'+x[1]+')"></div><span>'+x[0]+"</span></div>");});
+var hd=document.getElementById("hd");function sc(){hd.classList.toggle("sc",scrollY>40)}addEventListener("scroll",sc,{passive:true});sc();
+var bg=document.getElementById("bg"),nl=document.getElementById("nl");
+bg.onclick=function(){var o=nl.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+nl.addEventListener("click",function(e){if(e.target.id==="sv"&&innerWidth<=1024){e.preventDefault();e.target.parentNode.classList.toggle("show")}else if(e.target.tagName==="A"){nl.classList.remove("open")}});
+var done=false;function count(){document.querySelectorAll("[data-n]").forEach(function(el){var t=+el.dataset.n,s=el.dataset.s,st=null;function f(ts){st=st||ts;var p=Math.min((ts-st)/1800,1);el.textContent=Math.floor(t*p)+(p<1?"":s);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})}
+if("IntersectionObserver"in window){new IntersectionObserver(function(e,o){if(e[0].isIntersecting&&!done){done=true;count();o.disconnect()}},{threshold:.4}).observe(document.querySelector(".stats"))}
+var i=0,tt=document.getElementById("tt");function per(){return innerWidth<=640?1:innerWidth<=1024?2:3}
+function go(n){var m=4-per();i=n>m?0:n<0?m:n;tt.style.transform="translateX(-"+(i*100/per())+"%)"}
+document.getElementById("nx").onclick=function(){go(i+1)};document.getElementById("pv").onclick=function(){go(i-1)};
+var tm=setInterval(function(){go(i+1)},5000);tt.parentNode.onmouseenter=function(){clearInterval(tm)};addEventListener("resize",function(){go(0)});
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var f=e.target,v=true;f.querySelectorAll("[required]").forEach(function(x){if(!x.value.trim()||(x.type==="email"&&!/^\S+@\S+\.\S+$/.test(x.value))){v=false;x.style.borderColor="#d33"}else x.style.borderColor=""});if(v){document.getElementById("ok").style.display="inline";f.reset()}});
+</script>
+</body>
+</html>
